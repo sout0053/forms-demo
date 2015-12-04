@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<form action="https://formspree.io/maxwell.southwood@outlook.com" method="post">
+
+  <div>
+  <label for="name">Name</label>
+  <input id="name" required name="name">
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required placeholder="youremail@hotmail.com">
+  </div>
+
+  <div>
+    <label for="subject">Subject</label>
+    <select id="subject" name="_subject">
+      <option>I'm looking for a freelancer</option>
+      <option>Let's get a coffee</option>
+      <option>You're awesome!</option>
+    </select>
+  </div>
+
+  <fieldset>
+    <legend>How are you feeling?</legend>
+
+    <input id="happy" type="radio" name="feels">
+    <label for="happy">Happy</label>
+
+    <input id="sad" type="radio" name="feels">
+    <label for="sad">Sad</label>
+
+    <input id="tired" type="radio" name="feels">
+    <label for="tired">Tired</label>
+
+    <input id="super" type="radio" name="feels">
+    <label for="super">Super</label>
+  </fieldset>
+
+  <div>
+    <label for="message">Message</label>
+    <textarea id="message" name="message"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Send!</button>
+  </div>
+
+</form>
+
+</body>
+</html>
