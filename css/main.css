@@ -1,28 +1,25 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
-html {
-  box-sizing: border-box;
-
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
-  background-color: #fff;
-
-  font-family: sans-serif;
+label {
+  display: block;
+  cursor: pointer;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+input + label {
+  display: inline;
 }
 
+input {
+  border: 3px solid hotpink;
+  background-color: pink;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 1em;
+}
 
-body {
-  margin: 0;
-  padding: 0;
+button {
+  font-size: 2rem;
+  padding: 1em;
+  border-radius: 10px;
+  border: 3px solid green;
+  background-image: linear-gradient(limegreen, darkgreen);
+  cursor: pointer;
 }
